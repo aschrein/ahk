@@ -1,4 +1,6 @@
-﻿LWin & S::
+#persistent
+#usehook
+LWin & S::
 Send +{Left}
 Return
 LWin & F::
@@ -16,6 +18,13 @@ Send {PgUp}
 Return
 CapsLock & \::
 Send {PgDn}
+Return
+
+CapsLock & V::
+Send ^+{Right}
+Return
+CapsLock & C::
+Send ^+{Left}
 Return
 
 CapsLock & Q::
@@ -56,6 +65,13 @@ Send {'}
 Return
 CapsLock & N::
 Send {/}
+Return
+
+CapsLock & A::
+Send ^{Left}
+Return
+CapsLock & G::
+Send ^{Right}
 Return
 
 CapsLock & D::
