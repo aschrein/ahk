@@ -1,96 +1,40 @@
-#persistent
-#usehook
-LWin & S::
-Send +{Left}
-Return
-LWin & F::
-Send +{Right}
-Return
-LWin & D::
-Send +{Down}
-Return
-LWin & E::
-Send +{Up}
-Return
-
-CapsLock & ]::
-Send {PgUp}
-Return
-CapsLock & \::
-Send {PgDn}
-Return
-
-CapsLock & V::
-Send ^+{Right}
-Return
-CapsLock & C::
-Send ^+{Left}
-Return
-
-CapsLock & Q::
-Send {Esc}
-Return
-
-CapsLock & J::
-Send {(}
-Return
-CapsLock & K::
-Send {)}
-Return
-
-CapsLock & B::
-Send {m}{_}
-Return
-
-CapsLock & U::
-Send {{}
-Return
-CapsLock & I::
-Send {}}
-Return
-
-CapsLock & M::
-Send {[}
-Return
-CapsLock & ,::
-Send {]}
-Return
-
-
-CapsLock & H::
-Send {"}
-Return
-CapsLock & Y::
-Send {'}
-Return
-CapsLock & N::
-Send {/}
-Return
-
-CapsLock & A::
-Send ^{Left}
-Return
-CapsLock & G::
-Send ^{Right}
-Return
-
-CapsLock & D::
-Send {Down}
-Return
-CapsLock & S::
-Send {Left}
-Return
-CapsLock & F::
-Send {Right}
-Return
-CapsLock & E::
-Send {Up}
-Return
-CapsLock & R::
-Send {Enter}
-Return
-CapsLock & W::
-Send {Backspace}
-Return	
-CapsLock::LCTRL
-LWin::LCTRL
+Persistent
+#UseHook
+CapsLock & S::+Left
+CapsLock & V::^+Right
+CapsLock & C::^+Left
+CapsLock & Q::Esc
+CapsLock & J::(
+CapsLock & K::)
+CapsLock & U::`{
+CapsLock & I::}
+CapsLock & M::[
+CapsLock & ,::]
+CapsLock & H::"
+CapsLock & Y::'
+CapsLock & B::\
+CapsLock & N::/
+CapsLock & A::^Left
+CapsLock & G::^Right
+CapsLock & D::Down
+CapsLock & S::Left
+CapsLock & F::Right
+CapsLock & E::Up
+CapsLock & R::Enter
+CapsLock & W::Backspace
+CapsLock & X::
+{
+	Send "NULL {!}{=}"
+	Return
+}
+CapsLock & Z::
+{
+	Send "/**`n*`n*/"
+	Return
+}
+CapsLock & T::
+{
+	Send 'assert((true) && "Message");'
+	Return
+}
+CapsLock::Ctrl
